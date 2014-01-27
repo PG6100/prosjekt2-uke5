@@ -1,6 +1,5 @@
 package no.nith.pg6100;
 
-
 import java.util.List;
 
 public class MovieEJBRemote {
