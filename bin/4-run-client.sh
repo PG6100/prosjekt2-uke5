@@ -8,4 +8,4 @@ fi
 
 echo "using $GLASSFISH_HOME"
 
- $GLASSFISH_HOME/bin/appclient -client ../target/prosjekt2-uke5-1.0-SNAPSHOT.jar
+ $GLASSFISH_HOME/glassfish/bin/appclient -client ../target/prosjekt2-uke5-1.0-SNAPSHOT.jar $*

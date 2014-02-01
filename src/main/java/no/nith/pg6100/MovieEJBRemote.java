@@ -1,28 +1,18 @@
 package no.nith.pg6100;
 
+import javax.ejb.Local;
+import javax.ejb.Remote;
 import java.util.List;
 
-public class MovieEJBRemote {
+@Remote
+public interface MovieEJBRemote {
+    List<Movie> findMovies();
 
-    public List<Movie> findMovies() {
+    Movie findMovieById(Long id);
 
-        return null;
-    }
+    Movie createMovie(Movie movie);
 
-    public Movie findMovieById(Long id) {
-        return null;
-    }
+    void deleteMovie(Movie movie);
 
-    public Movie createMovie(Movie movie) {
-        return null;
-    }
-
-    public void deleteMovie(Movie movie) {
-
-    }
-
-    public Movie updateMovie(Movie movie) {
-        return null;
-    }
-
+    Movie updateMovie(Movie movie);
 }
